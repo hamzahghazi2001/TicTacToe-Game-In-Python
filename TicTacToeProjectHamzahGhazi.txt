@@ -1,0 +1,103 @@
+#MADE BY HAMZAH GHAZI 
+#MAKING THE BOARD FOR THE TIC TAC TOE GAME
+print("player 1 is 'X'\nplayer 2 is 'O'")
+Next=str
+board=[["","",""],
+      ["","",""],
+      ["","","",],]
+      
+'''      
+I HAVE ADDED A FUCTION TO HELP ME CALL BACK THIS BLOCK OF CODE WHEN REQUIRED,
+COUNTER HAS BEEN ADDED SO THAT NUMBERS CAN BE SHOWN ON THE Y AXIS SO THE USER HAS 
+A CLEAR UNDERSTANDING OF THE BOARD AND RULES
+''' 
+def game_board(player=0,row=0,column=0):
+    print("   0 , 1 , 2  ")
+    count=0
+    for row in board:
+         print(count,row)
+         count= count +1 
+         
+    
+#THIS IS A WHILE LOOP SO THAT THE PROGRAM DOES NOT END
+while Next!='No':   
+    
+        
+        print("please enter the cordintae of your input")
+        game_board()
+
+#THIS IS MENT FOR THE USER TO UNDERSTAND WHERE THEIR INPUT WILL GO ON THE BOARD 
+        y=int(input("please enter the Y cordinate:"))
+        x=int(input("please enter the X cordinate:"))
+
+        for i in board:
+            board[y][x]="X"
+            game_board()
+        for row in board:
+            for col in row: 
+                if board[0][0]=="X" and board[0][1] =="X"  and board[0][2] =="X":
+                    print("Congrates You Win PLAYER 1")
+                elif board[1][0]=="X"  and board[1][1] =="X"  and board[1][2] =="X":
+                    print("Congrates You Win PLAYER 1")
+                elif board[2][0]=="X"  and board[2][1] =="X"  and board[2][2] =="X":
+                    print("Congrates You Win PLAYER 1")
+                elif board[0][0]=="X" and board[1][1] =="X"  and board[2][2] =="X":
+                    print("Congrates You Win PLAYER 1")
+                elif board[0][2]=="X" and board[1][1] =="X"  and board[2][0] =="X":
+                    print("Congrates You Win PLAYER 1")
+                elif board[0][0]=="X"  and board[1][0] =="X" and board[2][0] =="X":
+                    print("Congrates You Win PLAYER 1")
+                elif board[0][1]=="X"  and board[1][1] =="X" and board[2][1] =="X":
+                    print("Congrates You Win PLAYER 1")
+                elif board[0][2]=="X"  and board[2][1] =="X"  and board[2][2] =="X":
+                    print("Congrates You Win PLAYER 1")
+             
+    
+                else:
+                    print("Nobody won Please continue")
+        
+
+        print("please enter the cordintae of your input")
+
+
+
+    
+        y=int(input("please enter the Y cordinate:"))
+        x=int(input("please enter the X cordinate:"))
+
+        
+# EACH IF STATEMENT IS MENT FOR EITHER "X" OR "O", THIS IS ONE IS FOR "O"
+            
+        for j in board:
+            board[y][x]="O"
+            game_board()
+        for row in board:
+            for col in row: 
+                if board[0][0]=="O" and board[0][1] =="O"  and board[0][2] =="O":
+                    print("Congrates You Win PLAYER 2")
+                elif board[1][0]=="O"  and board[1][1] =="O"  and board[1][2] =="O":
+                    print("Congrates You Win PLAYER 2")
+                elif board[2][0]=="O"  and board[2][1] =="O"  and board[2][2] =="O":
+                    print("Congrates You Win PLAYER 2")
+                elif board[0][0]=="O" and board[1][1] =="O"  and board[2][2] =="O":
+                    print("Congrates You Win PLAYER 2")
+                elif board[0][2]=="O" and board[1][1] =="O"  and board[2][0] =="O":
+                    print("Congrates You Win PLAYER 2")
+                elif board[0][0]=="O"  and board[1][0] =="O" and board[2][0] =="O":
+                    print("Congrates You Win PLAYER 2")
+                elif board[0][1]=="O"  and board[1][1] =="O" and board[2][1] =="O":
+                    print("Congrates You Win PLAYER 2")
+                elif board[0][2]=="O"  and board[2][1] =="O"  and board[2][2] =="O":
+                    print("Congrates You Win PLAYER 2")
+             
+    
+                else:
+                    print("Nobody won Please continue")
+                    game_board()
+                    
+        Next=str(input("Either Enter 'Yes' To Continue: \n Or Either 'No' To End:"))             
+  #game_board IS THE FUCTION I HAVE DEFINED TO CALL BACK TO THE BOARD        
+        game_board()
+ #IM HAVING TROUBLE IN ENDING THE LOOP WHEN THE WINNER IS FOUND. (DESIGNED BY HAMZAH GHAZI)
+        
+  
